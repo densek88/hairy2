@@ -1,0 +1,885 @@
+
+
+
+html{
+    scroll-behavior: smooth;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+body{
+    scroll-behavior: smooth;
+    margin: 0;
+    height: 100%;
+    background-color: #7c3f00;
+    overflow-x: hidden;
+}
+#loading-screen {
+     /* Set rules to fill background */
+    min-height: 100%;
+    min-width: 1024px;
+        
+    /* Set up proportionate scaling */
+    width: 100%;
+    height: auto;
+        
+    /* Set up positioning */
+    position: fixed;
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: 10000;
+}
+#fixed-button {
+   position: fixed;
+    bottom: 50px; /* Adjust as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    background: transparent;
+    border: none !important;
+    font-size:0;
+    cursor: pointer;
+    z-index: 10001;
+    height: 600px;
+    width: 1500px;
+}
+
+
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #7c3f00;
+    margin-bottom: 20px;
+    padding: 15px;
+}
+
+.navbar{
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.logo{
+      font-family: "Coiny", system-ui;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 72.15px;
+    text-align: left;
+    color: white;
+}
+
+.menuItem{
+    text-decoration: none;
+      font-family: "Coiny", system-ui;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 25.25px;
+    text-align: left;
+    color: white;
+}
+
+.menuItem:hover{
+    color:black;
+    cursor: pointer;
+}
+
+#intro{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    background-color:#7c3f00;
+    text-align: center;
+    align-items: center;
+}
+
+.official{
+      font-family: "Coiny", system-ui;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 72.15px;
+    text-align: left;
+    color: white;
+    margin-bottom: 0;
+    text-shadow: 0px 5px 0px #f56302;
+}
+
+.paragraph{
+      font-family: "Coiny", system-ui;
+    width: 55%;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28.86px;
+    text-align: left;
+    color:#e5d3b3;
+    margin-top: 0;
+    text-align: center;
+}
+
+.hairyBg1{
+    width: 50%;
+    margin-left: -15%;
+}
+
+.textBar{
+  
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 8%;
+    margin-bottom: 100px;
+    transform: scale(1.6);
+    align-items: center;
+}
+
+
+
+.social{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+
+
+.socialButton{
+    background: #c05711;
+    margin-left: 10px;
+    width: 3.6rem;
+    height: 3.4rem;
+    top: 515px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0px 5px 0px 0px #f56302;
+    align-items: center;
+    border-radius: 15px;
+    z-index: 99199;
+}
+
+.socialButton img{
+    width: 25px;
+    height: 25px;
+}
+#redSection{
+    background-image: url(assets/redback.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: space-evenly;
+    z-index: 1;
+    position: relative;
+    margin-top: -200px;
+    height: 700px;
+}
+
+
+.hairyBg1 img{
+    width: 100%;
+    height: auto;
+}
+
+#redSection img{
+    z-index: 1;
+    top: auto;
+}
+
+.content{
+    width:40%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:35px;
+}
+
+.hairyHeader{
+      font-family: "Coiny", system-ui;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 43.29px;
+    text-align: left;
+    color: white;
+    margin-bottom: 0;
+    text-shadow: 0px 6px 0px #79141B;
+}
+
+.para{
+    margin-top: 0;
+    width: 77%;
+      font-family: "Coiny", system-ui;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 25.25px;
+    text-align: left;
+    color: #FFABB0;
+    text-shadow: 0px 3px 0px #79141B;
+
+}
+
+.animated{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.banner {
+    width: 100%;
+    overflow: hidden; /* Ensures no overflow outside the container */
+    margin-top: 30px;
+    position: relative;
+}
+
+.banner img {
+    width: 100%;
+    height: auto; /* Maintains the aspect ratio of the image */
+    display: block; /* Removes the small gap below the image */
+}
+.banner img.gif {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width:34%;
+    height: auto;
+}
+
+
+
+
+
+#tokenomics {
+    background-color: #7c3f00;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tokenHeader {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tokenContent{
+      font-family: "Coiny", system-ui;
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 115.44px;
+    text-align: center;
+    color: white;
+    text-shadow: 0px 7px 0px #f56302;
+}
+
+.tokenomicsDesc {
+      font-family: "Coiny", system-ui;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32.47px;
+    text-align: center;
+    color:#e5d3b3;
+}
+
+.tokenomicsImg{
+ 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+.tokenomicsItem{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tokenomicsItem img{
+    width: 400px;
+    height: 400px;
+}
+
+.tokenomicsItem h2{
+      font-family: "Coiny", system-ui;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 64.93px;
+    text-align: center;
+    color: white;
+    text-shadow: 0px 6px 0px #f56302;
+}
+
+.tokenomicsItem div{
+      font-family: "Coiny", system-ui;
+    font-size: 23px;
+    font-weight: 400;
+    line-height: 41.49px;
+    text-align: center;
+    color:white;
+}
+
+#SocialsHeader{
+    margin-bottom: 80px;
+}
+.socialLinks {
+      font-family: "Coiny", system-ui;
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 115.44px;
+    text-align: center;
+    color: white;
+    margin-top: 80px;
+    margin-bottom: 0;
+    text-shadow: 7px 0px 0px #f56302;
+
+}
+
+.hairyPNG{
+    display: none;
+}
+
+.linksPara{
+      font-family: "Coiny", system-ui;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32.47px;
+    text-align: center;
+    margin-top: 0;
+    color: #E6D2FF;
+    margin-bottom: 40px;
+}
+
+.socialButtons{
+    background-color: #981F27;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.icons{
+    width: 142px;
+    height: 143px;
+    background-color: white;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border-radius: 26px;
+    transition: transform 0.3s ease;
+    box-shadow: 0px 8px 0px 0px #79141B;
+}
+
+.icons img{
+    width: 65px;
+    height: 71px;
+}
+
+.icons:hover{
+    transform: scale(1.2);
+}
+
+.ButtonIcons{
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+.contract{
+    width: 100vw;
+    margin-bottom: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contractHeader{
+    margin-top: 30px;
+      font-family: "Coiny", system-ui;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 72.15px;
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+    text-shadow: 6px 0px 0px #79141B;
+}
+
+.contractNumber{
+    background-color: white;
+    width: 70%;
+    padding: 5px;
+      font-family: "Coiny", system-ui;
+    border-radius: 26px;
+    margin-bottom: 5%;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 46.9px;
+    text-align: center;
+    color:#981F27;
+    box-shadow: 0px 8px 0px 0px #79141B;
+    cursor: pointer;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    height: 445px;
+    background-color:#80390a;
+}
+
+.footerContent{
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-left: 7%;
+    padding: 40px;
+}
+
+.footerImg {
+    position: relative;
+}
+
+.footerImg img{
+    width: 60rem;
+    height: 45rem;
+    position:absolute;
+    bottom: 0;
+    z-index: 1;
+    right: 0;
+}
+
+.footerHeader{
+      font-family: "Coiny", system-ui;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 43.29px;
+    text-align: left;
+    color: white;
+    text-shadow: 2px 2px 0px #79141B;
+
+}
+
+.footerParagraph1{
+      font-family: "Coiny", system-ui;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 25.25px;
+    text-align: left;
+    color: #F5ECFF;
+    text-shadow: 0px 3px 0px #79141B;
+
+}
+
+.footerParagraph2{
+    margin-top: 15px;
+      font-family: "Coiny", system-ui;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 18.04px;
+    text-align: left;
+    color: #F5ECFF;
+    text-shadow: 0px 3px 0px #79141B;
+
+}
+
+.footerParagraph3{
+      font-family: "Coiny", system-ui;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 23.45px;
+    text-align: left;
+    color:#F5ECFF;
+    width: 90vw;
+    text-shadow: 0px 3px 0px #79141B;
+
+} 
+
+
+@media (max-width: 1350px) {
+
+    #loading-screen{
+        display: none;
+    }
+
+    video.mobile-source {
+        display: none;
+      }
+    
+      video::-webkit-media-controls {
+        display: none !important;
+      }
+    
+      video:hover::-webkit-media-controls {
+        display: none !important;
+      }
+    
+      video::-webkit-media-controls-enclosure {
+        display: none !important;
+      }
+    
+      video:hover::-webkit-media-controls-enclosure {
+        display: none !important;
+      }
+
+    body{
+        margin: 0;
+    }
+
+    .animated video{
+        display: none;
+    }
+
+    .content{
+        padding: 5px;
+    }
+
+    #copyButton{
+        width: 90%;
+    }
+
+    .official{
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+    }
+
+    .hairyPNG{
+        display: block;
+        position: relative;
+        z-index: 2;
+        width: 652.39px;
+        height: 496.37px;
+        margin-top: -15%;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .contract{
+        width: 100vw;
+    }
+
+    .hairyBg1 img{
+        display: block; 
+        width: 100%;
+        height: 100%;
+        position: relative;
+        transform: scale(1.2);
+        margin-bottom: 50%;
+    }
+
+ 
+
+    .menuItem{
+        display: none;
+    }
+
+    video.web-source {
+        display: none;
+      }
+
+    #intro{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+    }
+
+    .textBar {
+        padding: 0;
+        width: 100%;
+        margin-left: 0;
+        transform: scale(0.9);
+    }
+
+    .textBar h2{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        font-size: 35px;
+    }
+
+    .paragraph{
+        width: 100%;
+        text-align: center;
+    }
+
+    .social{
+        width: 100%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+
+  
+
+    .hairyBg1{
+        margin-left: 0 ;
+    }
+
+    .hairyBg1 video{
+        display: none;
+    }
+
+    .redMark{
+        width: 100vw;
+    }
+
+    #redSection{
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        height: 900px;
+    }
+
+    .TextContent{
+        padding-top: 30px;
+        margin-bottom: -30px;
+    }
+
+    .content{
+        width: 100vw;
+    }
+
+    .animated{
+        transform: scale(0.6);
+    }
+
+    .tokenContent{
+        transform: scale(0.75);
+    }
+
+    .tokenomicsDesc{
+        transform: scale(0.75);
+    }
+
+    .linksPara{
+        transform: scale(0.75);
+    }
+
+    .tokenomicsImg{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .icons{
+        transform: scale(0.75);
+    }
+
+    .contractNumber{
+        font-size: 10px;
+    }
+    .footer{
+        padding-top: 20%;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        width: 100vw;
+        background-color: #80390a;
+        height: 100vh;
+    }
+
+    .footerImg{
+        width: 100vw;
+        background-color: #80390a;
+        display: flex;
+        justify-content: center;
+    }
+
+    .TextContent{
+        text-align: center;
+    }
+
+    .hairyHeader{
+        text-align: center;
+    }
+
+    .para{
+        text-align: center;
+        width: 95vw;
+        font-size: 10px;
+        padding:10px;
+    }
+
+    .footerImg img{
+        width: 100%;
+        height: 100%;
+        position: relative;
+        left: 0;
+        background-color: #80390a;
+    }
+
+    .footerHeader{
+        margin-left: 2%;
+    }
+
+    .footerContent{
+        width: 90vw;
+        display: flex;
+        justify-content: center;
+        margin-left: 0;
+        padding: 25px;
+    }
+
+    .footerParagraph1{
+        transform: scale(0.95);
+        margin-left: 0;
+    }
+
+    .footerParagraph2{
+        transform: scale(0.95);
+    }
+
+    .footerParagraph3{
+        transform: scale(0.95);
+    }
+    .video1{
+        display: none;
+    }
+}
+
+@media (max-width: 900) {
+
+    body{
+        margin: 0;
+    }
+
+    .menuItem{
+        display: none;
+    }
+
+    #intro{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+    }
+
+    .textBar {
+        padding: 0;
+        width: 90vw;
+        transform: scale(0.9);
+    }
+
+    .hairyBg1{
+        margin-left: 0 ;
+    }
+
+    .hairyBg1 video{
+        width: 90vw;
+        height: 90vh;
+        margin-left: -50px;
+    }
+
+    .redMark{
+        width: 100vw;
+    }
+
+    #redSection{
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        height: 900px;
+    }
+
+    .TextContent{
+        padding: 15px;
+        margin-bottom: -30px;
+    }
+
+    .content{
+        width: 100vw;
+    }
+
+    .animated{
+        transform: scale(0.6);
+    }
+
+    .tokenContent{
+        transform: scale(0.75);
+    }
+
+    .tokenomicsDesc{
+        transform: scale(0.75);
+    }
+
+    .linksPara{
+        transform: scale(0.75);
+    }
+
+    .tokenomicsImg{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .contractNumber{
+        font-size: 13px;
+        transform: scale(0.35);
+        margin: 0;
+    }
+
+    .icons{
+        transform: scale(0.75);
+    }
+    .footer{
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        width: 100vw;
+    }
+
+    .footerImg{
+        width: 100vw;
+        background-color: #e5d3b3;
+    }
+
+
+    .footerImg img{
+        width: 100vw;
+        height: 90vh;
+        position: relative;
+        left: 0;
+        background-color: #e5d3b3;
+    }
+
+    .footerHeader{
+        margin-left: 2%;
+    }
+
+    .footerContent{
+        width: 90vw;
+        display: flex;
+        justify-content: center;
+        margin-left: 0;
+        padding: 25px;
+    }
+
+    .footerParagraph1{
+        transform: scale(0.95);
+        margin-left: 0;
+    }
+
+    .footerParagraph2{
+        transform: scale(0.95);
+    }
+
+    .footerParagraph3{
+        transform: scale(0.95);
+    }
+}

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="images/ico.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Coiny&display=swap" rel="stylesheet">
+    <title>Hairy on Sol</title>
+</head>
+
+<body>
+    <div>
+        <img id="loading-screen" src="images/ld3.png" alt="Loading...">
+        <button id="fixed-button">ENTER</button>
+    </div>
+    <header class="header">
+        <div class="navbar">
+
+            <div class="logo">Hairy</div>
+        </div>
+    </header>
+    <div id="intro">
+        <div class="textBar">
+            <h2 class="official">HAIRY ON SOL</h2>
+            <p class="paragraph">In the heart of the Stone Age, a gentle, hairy creature named Hairy lived in a cozy
+                cave nestled in a towering mountain. This mountain, with its majestic peaks piercing the sky, provided a
+                breathtaking backdrop to Hairy's daily life. The cave itself was a sanctuary, adorned with primitive
+                drawings and the faint glow of a fire that kept the darkness at bay. Every day, Hairy ventured out into
+                the untamed wilderness that surrounded his home.</p>
+            <div class="social">
+                <a class="socialButton" href="https://t.me/hairyonsol" target="_blank"><img src="images/telegram.png" alt=""></a>
+                <a class="socialButton" href="https://x.com/HairySolMeme" target="_blank"><img src="images/twitter.png" alt=""></a>
+                <a class="socialButton" href="https://dexscreener.com/" target="_blank"><img src="images/dexscreener.png" alt=""></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="banner">
+        <img src="images/banner2.png" alt="">
+        <img src="images/gif.gif" alt="Banner GIF" class="gif">
+    </div>
+    <div id="tokenomics">
+        <div class="tokenHeader">
+            <div class="tokenContent">TOKENOMICS</div>
+            <div class="tokenomicsDesc">NEVER FORGET ABOUT CONTRACT DETAILS!</div>
+        </div>
+        <div class="tokenomicsImg">
+            <div class="tokenomicsItem">
+                <img src="images/supply.png" alt="">
+                <h2>Supply</h2>
+                <div>999,999,999</div>
+            </div>
+            <div class="tokenomicsItem">
+                <img src="images/revoked.png" alt="">
+                <h2>Contract</h2>
+                <div>Revoked</div>
+            </div>
+            <div class="tokenomicsItem">
+                <img src="images/tax.png" alt="">
+                <h2>Tax</h2>
+                <div>0% Buy 0% Sell</div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="contract">
+        <div class="contractHeader">CONTRACT:</div>
+        <div id="copyButton" class="contractNumber">????????????????????????????????????????????</div><input
+            style="display: none;" type="text" value="????????????????????????????????????????????" id="copyText"
+            readonly>
+    </div>
+
+    </div>
+    <div class="footer">
+        <div class="footerContent">
+            <h2 class="footerHeader">HAIRY</h2>
+            <div class="footerParagraph1">GET this MEME! It's shaking the cave of SOLANA right? WE ARE GOING
+                HIGH AND NOT GOING BACK.</div>
+            <div class="footerParagraph2">The details in this disclaimer do not offer investment, financial, trading,
+                usage, playing, or any other type of advice.</div>
+            <div class="footerParagraph3">2024 © ALL RIGHTS RESERVED - HAIRY</div>
+        </div>
+        <div class="footerImg">
+            <img src="images/Hairygold.png" alt="">
+        </div>
+    </div>
+    <script>
+        document.getElementById("copyButton").addEventListener("click", function () {
+            var copyText = document.getElementById("copyText");
+
+            // Select the text in the input field
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); // For mobile devices
+
+            // Copy the selected text to the clipboard
+            document.execCommand("copy");
+
+            // Optionally, provide visual feedback or a message to the user
+            alert("Copied the text: " + copyText.value);
+        });
+
+        document.getElementById('fixed-button').addEventListener('click', function () {
+            var loadingScreen = document.getElementById('loading-screen');
+
+            // Replace the src attribute with the GIF
+            loadingScreen.src = 'images/ld.gif';
+
+            // Hide the button after clicking
+            var button = document.getElementById('fixed-button');
+            button.style.display = 'none';
+
+            setTimeout(function () {
+                loadingScreen.style.display = 'none';
+            }, 1000); // 5000 milliseconds = 5 seconds
+        });
+
+    </script>
+</body>
+
+</html>
